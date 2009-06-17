@@ -1,0 +1,8 @@
+.clickable tr{cursor:default;}
+.clickable td, th {padding: 2px;}
+.clickable tr.highlighted{background-color:#ceddee}
+.clickable tr.selected{background-color:#B9DDFF; color:white}
+.clickable th.sort-asc, th.sort-desc { background: url(../images/sort-asc.gif) no-repeat right center; } 
+.clickable th.sort-desc { background: url(../images/sort-dsc.gif) no-repeat right center; }
+.table_border td {border: 1px solid #CCC}
+.table_border th {border: 1px solid #CCC}

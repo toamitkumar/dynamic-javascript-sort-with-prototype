@@ -1,0 +1,20 @@
+Usage:
+
+* The table should have an id attribute
+* It should have thead > tr > th as headers.
+* It should have tbody > tr > td as body.
+* thead > tr > th[class="integer"] will make the column int sort
+* thead > tr > th[class="date"] will make the column date sort
+* thead > tr > th[class="float"] will make the column float sort
+* thead > tr > th[class=""] will make the column string sort
+* thead > tr > th[class="nosort"] will make the column unsortable
+* thead > tr > th[class="sort-asc"] will make the column default sort on page load
+* sorterId = TableSortObserver.sortableTables[table_id];
+sorterId.resort(sorterId.sortIndex, sorterId.sortOrder);
+This will resort the table after dynamic addition/deletion of a row. It will retain the last sort column.
+
+Initialize:
+
+* TableSortObserver.bindEventsToTableRow(table_id)
+
+The TableSortObserver retains all the sortable tables registered on the page. The sorter has been tesetd on IE 5/6, FF 2/3, Chrome, Safari.

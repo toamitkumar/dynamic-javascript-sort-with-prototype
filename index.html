@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>Sorting a Table with Prototype Demo</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+  <link type="text/css" href="stylesheets/sorter.css" rel="stylesheet">
+  <script type="text/javascript" src="js/prototype.js"></script>
+  <script type="text/javascript" src="js/table_sorter.js"></script>
+ </head>
+
+ <body>
+  <table id="sortable_table" class="sortable">
+	<thead class="clickable table_border">
+		<tr>
+			<th class="integer"><a href="#">Number</a></th>
+			<th><a href="#">String</a></th>
+			<th class="date"><a href="#">Date</a></th>
+			<th class="float"><a href="#">Float</a></th>
+			<th class="nosort"><a href="#">Do not Sort</a></th>
+		</tr>
+	</thead>
+	<tbody class="table_border">
+		<tr>
+			<td>1017</td>
+			<td>Its</td>
+			<td>08/30/1999</td>
+			<td>509.34</td>
+			<td>Do</td>
+		</tr>
+		<tr>
+			<td>18051</td>
+			<td>been</td>
+			<td>12/21/2022</td>
+			<td>559.34</td>
+			<td>not</td>
+		</tr>
+		<tr>
+			<td>8280</td>
+			<td>long</td>
+			<td>01/01/1111</td>
+			<td>59.37</td>
+			<td>Sort</td>
+		</tr>
+		<tr>
+			<td>19672</td>
+			<td>time</td>
+			<td>11/05/1755</td>
+			<td>34.34</td>
+			<td>me</td>
+		</tr>
+		<tr>
+			<td>20806</td>
+			<td>we</td>
+			<td>06/16/2022</td>
+			<td>45.87</td>
+			<td>!</td>
+		</tr>
+		<tr>
+			<td>10446</td>
+			<td>Met.</td>
+			<td>03/22/2006</td>
+			<td>67.87</td>
+			<td>!</td>
+		</tr>
+	</tbody>
+</table>
+ </body>
+
+<script type="text/javascript">
+<!--
+	TableSortObserver.bindEventsToTableRow('sortable_table');
+//-->
+</script>
+
+</html>
